@@ -24,6 +24,15 @@ features = ['rt', 'stm32f100', 'stm32f101', 'stm32f102', 'stm32f103', 'stm32f107
 
 [features]
 default = []
+all = [
+    "rt",
+    "stm32f100",
+    "stm32f101",
+    "stm32f102",
+    "stm32f103",
+    "stm32f107",
+]
+
 rt = ["cortex-m-rt/device"]
 stm32f100 = []
 stm32f101 = []

@@ -1,0 +1,14 @@
+[package]
+name = "stm32docs"
+version = "0.1.0"
+authors = ["Nicolas Stalder <n@stalder.io>"]
+description = "Dummy crate to build documentation for all devices"
+edition = "2018"
+
+[dependencies]
+stm32l0 = { path = "../stm32l0", features = ["all"] }
+stm32l1 = { path = "../stm32l1", features = ["all"] }
+stm32l4 = { path = "../stm32l4", features = ["all"] }
+
+[profile.dev]
+codegen-units = 1

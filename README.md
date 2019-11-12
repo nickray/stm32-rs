@@ -1,11 +1,18 @@
 # STM32 Crates
 
+[![Netlify Status][netlify-status-image]][netlify-status-link]
+[![Documentation (master)][docs-master-image]][docs-master-link]
+
 This repository contains device support for all STM32 microcontrollers,
 providing a safe API to that device using [svd2rust] and an extensive hierarchy
 of SVD patches. Each supported device is a feature-gated module in a crate for
 that device family.
 
 [svd2rust]: https://github.com/rust-embedded/svd2rust
+[netlify-status-image]: https://img.shields.io/netlify/85ff4c3c-baf5-44ca-ba15-cdc014ed94da?style=flat-square
+[netlify-status-link]: https://app.netlify.com/sites/stm32l4/deploys
+[docs-master-image]: https://img.shields.io/badge/docs-master-blue?style=flat-square
+[docs-master-link]: https://stm32l4.netlify.com
 
 **Please note many parts of most libraries will not have been tested on every
 possible chip yet! While they're all generated from ST-provided SVD files,
